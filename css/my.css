@@ -1,0 +1,65 @@
+/*
+    项目负责人：赵强
+    项目创建日期:2017.9.11
+    最新更新:2017.9.11
+    修改人员:赵强
+    修改日期:
+    修改原因:
+    修改代码行数区间:
+*/
+.temai_banner{width: 100%; height: 450px; margin-top: 1px; background: url(../images/temai/banner.jpg) no-repeat; background-size:100% 100%; position:relative;}
+.temai_banner .anniu{width:100%; text-align: center; height: 400px; line-height: 680px;}
+.temai_banner .anniu input{ width: 180px; height: 40px; background: url(../images/temai/banner_1.png) no-repeat; background-size: 100% 100%; color: #2A6ED2; font-size: 18px; border:none; cursor:pointer;}
+.temai_banner .anniu a:last-child input{color: #fff; margin-left: 40px; background: url(../images/temai/banner_2.png) no-repeat; background-size: 100% 100%;}
+
+.main{width: 100%; height:auto;}
+/**************************************** 入驻 ****************************************/
+.main .ruzhu{width: 100%; height: 890px; background: url(../images/temai/bg.jpg) no-repeat; background-size:100% 100%;}
+.main .ruzhu .title{width: 100%; height: 150px; text-align: center;}
+.main .ruzhu .title h1{ height: 100px; line-height: 150px; color: #22293C; font-size:30px; letter-spacing: 1px;}
+.main .ruzhu .title p{ width: 100%; height: 50px; line-height: 50px; color: #585858; font-size: 14px;}
+.main .ruzhu .zhong{width: 100%; height: 500px; margin-top: 30px; position:relative;}
+.main .ruzhu .zhong li{ width: 300px; height: 120px; font-size: 16px; line-height: 90px; text-align: center;}
+.main .ruzhu .zhong li img{vertical-align: middle; margin-left: 20px;}
+.main .ruzhu .zhong ul:last-child img{ margin-left: 0; margin-right: 20px; }
+.main .ruzhu .ruzhu_down{width: 100%; height: 50px; line-height: 50px; text-align: center; margin-top: 50px;}
+.main .ruzhu .ruzhu_down input{ width: 200px; height: 50px; background: url(../images/temai/ruzhu9.png) no-repeat; background-size:100% 100%; border:none; color: #000; font-size: 18px; font-weight: 800; letter-spacing: 3px; cursor: pointer}
+.main .ruzhu .ruzhu_down input:last-child{margin-left: 50px;}
+
+/**************************************** 内容商城统计 ****************************************/
+.main .shop{width: 100%; height: 608px;}
+/* .main .shop .shop_top{width: 100%; height: 110px; text-align: center;}
+.main .shop .shop_top h1{ color: #343434; font-size: 30px; font-weight:400; margin-top: 10px;}
+.main .shop .shop_top p{font-size: 16px; color: #5C5C5C;}
+.main .shop .shop_top p span{ font-size: 20px; color: #F33205;} */
+.main .shop .shop_down .page{ width: 70%; height: 48px; margin:-20px auto; background: none;}
+.main .shop .shop_down .page li{width: 14%; height: 48px; margin-right: 1%;}
+.main .shop .shop_down .page li a{ position:relative;}
+.main .shop .shop_down .page li a em{ border:10px solid #000; width:0px; height:0px; border-color:#fff transparent transparent transparent; position:absolute; left: 42%; bottom: -23px;}
+.main .shop .shop_down .page li:hover em{border-color:#0A6DEE transparent transparent transparent;}
+.main .shop .shop_down .page li:hover a{background: #0A6DEE; color: #fff; border-radius:30px;}
+.main .shop .shop_down .page li a.active{background: #0A6DEE; color: #fff; border:none; border-radius:30px;}
+.main .shop .shop_down .page li a.active em{border-color:#0A6DEE transparent transparent transparent;}
+.main .shop .shop_down .swipe{width: 100%; height: 468px; margin-top: 40px;}
+/* 最开始 */
+.main .shop .shop_down .swipe .moren{width: 22%; height: 438px; border:1px solid #E5E5E5; border-right:none;}
+.main .shop .shop_down .swipe .moren:last-child{border-right:1px solid #E5E5E5;}
+.main .shop .shop_down .swipe .moren .moren_top{width: 100%; height: 106px; text-align: center; background: #F3F3F3; padding-top: 50px; color: #000; font-size: 16px;}
+.main .shop .shop_down .swipe .moren .moren_top img.dn{display: none;}
+.main .shop .shop_down .swipe .moren .moren_down{width: 100%; height: 200px; text-align: center; padding-top: 80px; color: #8D8D8D;}
+.main .shop .shop_down .swipe .moren .moren_down .dabudui{display: none;}
+
+/* 鼠标经过后 */
+.main .shop .shop_down .swipe .on{width: 30%; height: 478px; margin-top: -20px; transition:500ms; border:1px solid #0A6DEE;}
+.main .shop .shop_down .swipe .on:last-child{ border-right:1px solid #0A6DEE;}
+.main .shop .shop_down .swipe .on .moren_top{ background: #0A6DEE; color: #fff;}
+.main .shop .shop_down .swipe .on .moren_top img{ margin-left: 60px; margin-bottom: 5px;}
+.main .shop .shop_down .swipe .on .moren_top img.db{display: none;}
+.main .shop .shop_down .swipe .on .moren_top img.dn{display: block;}
+.main .shop .shop_down .swipe .on .moren_down .xiaofendui{display: none;}
+.main .shop .shop_down .swipe .on .moren_down .dabudui{display: block;}
+.main .shop .shop_down .swipe .on .moren_down{text-align: left; padding-top: 40px; padding-left: 50px;}
+.main .shop .shop_down .swipe .on .moren_down h1{color:#0A6DEE; margin-bottom: 20px;}
+.main .shop .shop_down .swipe .on .moren_down p{color: #000; font-size: 12px;}
+.main .shop .shop_down .swipe .on .moren_down input{ background: none; border:1px solid #BFBFBF; border-radius:5px; padding:8px 20px; margin-top: 10px; cursor: pointer;}
+.main .shop .shop_down .swipe .on .moren_down input:hover{background: #0A6DEE; color: #fff; border:none;}
