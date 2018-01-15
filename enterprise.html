@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css" type="text/css" />
+    <link rel="stylesheet" href="css/gonggong.css" type="text/css" />
+    <link rel="stylesheet" href="css/shoppingMall.css" type="text/css" />
+</head>
+<body>
+    <!-- 头部 -->
+    <header>
+        <div class="login">
+            <div class="center">
+                <div class="titleCon">
+                    <ul>
+                        <li class="fl"><a href="#">帮助中心</a></li>
+                        <li class="fl" data-clipboard-action="copy"><a href="javascript:void(0);" class="btn" data-clipboard-text="http://www.huiyuanmai.com/">收藏本站</a></li>
+                        <li class="fl"><a href="#"><i></i>会员买手机商城</a></li>
+                        <li class="fr"><a href="#">商家报名</a></li>
+                        <li class="fr"><a href="#">我的订单</a></li>
+                        <li class="fr">
+                            <div class="fl"><a href="#"><img src="images/login_qq.png"/>QQ登录</a></div>
+                            <div class="fl"><a href="#">登录</a></div>
+                            <div class="fl"><a href="#">注册</a></div> 
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="logo_nav">
+            <div class="center">
+                <div class="logo fl"><a href="#"><img src="images/logo.png" alt="" /></a></div>
+                <div class="nav fl">
+                    <ul>
+                        <li><a href="#" class="active">招商首页</a></li>
+                        <li><a href="#">入驻标准</a></li>
+                        <li><a href="#">业务介绍</a></li>
+                        <li><a href="#">收费标准</a></li>
+                        <li><a href="#">常见问题</a></li>
+                    </ul>
+                    <ul class="fr">
+                        <a href="#"><input type="submit" value="登录" /></a>
+                        <a href="#"><input type="submit" value="注册" /></a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- 内容 -->
+    <div class="main">
+        <div class="center">
+            <div class="main_top">
+                <ul>
+                    <li class="current">
+                        <i>1</i>
+                        <span>个人/企业信息填写</span>
+                    </li>
+                    <li>
+                        <i>2</i>
+                        <span>店铺信息填写</span>
+                    </li>
+                    <li>
+                        <i>3</i>
+                        <span>资质审核</span>
+                    </li>
+                    <li>
+                        <i>4</i>
+                        <span>签约</span>
+                    </li>
+                    <li>
+                        <i>5</i>
+                        <span>入驻成功</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="main_down">
+                <h4><span></span>管理人基本信息</h4>
+                <div>
+                    <label class="name">
+                        <span><i>*</i>管理人姓名:</span><input type="text" placeholder="请输入管理人的真实姓名" />
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        <span><i>*</i>管理人邮箱:</span><input type="email" id="email" name="email" placeholder="请输入常用邮箱，便于审核信息及后期规则的及时送达" />
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        <span><i>*</i>管理人手机号:</span><input type="text" placeholder="请输入管理人常用手机号，不支持座机号" />
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        <span><i>*</i>再次输入管理人手机号:</span><input type="text" placeholder="请再次输入手机号" />
+                    </label>
+                    <p>注：此手机号为商家首次登陆后台的账号，有最高管理员权限</p>
+                </div>
+                <div>
+                    <label>
+                        <span><i>*</i>身份证号:</span><input type="text" placeholder="请输入管理人的证件号（身份证、护照、军官证等均可）" />
+                    </label>
+                    <p>注：请确认您的身份证号码填写无误，该身份证号必须与您上传的身份证照片一致</p>
+                </div>
+                <div>
+                    <label>
+                        <span><i>*</i>紧急联系人名称:</span><input type="text" placeholder="紧急联系人与管理人不能为同一人" />
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        <span><i>*</i>紧急联系人手机号:</span><input type="text" placeholder="紧急联系人手机号不能与管理人手机号相同" />
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        <span><i>*</i>再次输入紧急联系人手机号码:</span><input type="text" placeholder="请输入紧急联系人手机号码" />
+                    </label>
+                </div>
+            <!-- 第三方店铺 -->
+                <!-- <div class="dp">
+                    <label for="yes">
+                        <span><i>*</i>是否存在第三方平台店铺:</span><input type="radio" class="dian" id="yes" name="one" value="1" /> <span class="dian">是</span>
+                    </label> 
+                    <label for="no">
+                        <input type="radio" id="no" class="dian" name="one" value="0" /> <span class="dian">否</span>
+                    </label>
+                    <i class="redxz"><small>☜</small> 请在此处进行选择</i>
+                </div>
+                <div class="yes">
+                    <label>
+                        <span><i>*</i>第三方店铺链接:</span>
+                        <select>
+                            <option value="0">请选择</option>
+                            <option value="1">淘宝</option>
+                            <option value="2">京东</option>
+                            <option value="3">天猫</option>
+                            <option value="4">唯品会</option>
+                            <option value="5">折800</option>
+                            <option value="6">贝贝</option>
+                            <option value="7">卷皮</option>
+                            <option value="8">蘑菇街</option>
+                            <option value="9">聚美优品</option>
+                            <option value="10">美丽说</option>
+                        </select>
+                        <input type="text" placeholder="请输入第三方链接" /><button class="jia">+</button> <button class="jian">-</button>
+                    </label> 
+                </div> -->
+                <div class="main_downTwo">
+                    <h4><span></span>店铺入住人基本信息<small>(注：上传的相片，横图长宽像素最大为1000*700，竖图长宽像素最大为1000*1400，图片大小在5M以内)</small></h4>
+                    <div>
+                        <span><i>*</i>身份证正面:</span>
+                        <img id="photo" src="images/shangchuanBg.png" width="109px" height="109px" style="display: block;" />
+                        <input type="file" name="imgOne" class="imgOne" id="imgOne" onchange="preImg(this.id,'photo')" />
+                    </div>
+                    <div>
+                        <span><i>*</i>身份证反面:</span>
+                        <img id="photo1" src="images/shangchuanBg.png" width="109px" height="109px" style="display: block;" />
+                        <input type="file" name="imgOne1" class="imgOne" id="imgOne1" onchange="preImg(this.id,'photo1')" />
+                    </div>
+                    <div class="data">
+                        <span><i>*</i>身份证号有效期:</span>
+                        <input type="date" /><small>至</small><input type="date" />
+                    </div>
+                    <div>
+                        <span><i>*</i>手持身份证头部照片:</span>
+                        <img id="photo2" src="images/shangchuanBg.png" width="109px" height="109px" style="display: block;" />
+                        <input type="file" name="imgOne2" class="imgOne" id="imgOne2" onchange="preImg(this.id,'photo2')" />
+                        <i class="fl">示例：</i>
+                        <img src="images/img/person1.png" height="109" width="109" alt="" class="shili" />
+                        <ul class="fl">
+                            <li>1、请手持本人身份证</li>
+                            <li>2、照片需免冠，建议素颜</li>
+                            <li>3、必须看清证件号码且证件号码不能被遮挡</li>
+                            <li>4、照片必须支持jpg、png格式</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <span><i>*</i>半身照片:</span>
+                        <img id="photo3" src="images/shangchuanBg.png" width="109px" height="109px" style="display: block;" />
+                        <input type="file" name="imgOne3" class="imgOne" id="imgOne3" onchange="preImg(this.id,'photo3')" />
+                        <i class="fl">示例：</i>
+                        <img src="images/img/person2.png" height="109" width="109" alt="" class="shili" />
+                        <ul class="fl">
+                            <li>1、请手持本人身份证</li>
+                            <li>2、照片需免冠，建议素颜</li>
+                            <li>3、必须看清证件号码且证件号码不能被遮挡</li>
+                            <li>4、照片必须支持jpg、png格式</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="main_downOne">
+                    <h4><span></span>企业基本信息</h4>
+                    <div class="dp">
+                        <label for="two1">
+                            <span><i>*</i>是否是国内企业证件照:</span>
+                            <input type="radio" id="two1" class="dian" name="two" value="two1" /><span class="dian">是</span>
+                        </label>
+                        <label for="two2">
+                            <input type="radio" id="two2" class="dian" name="two" value="two2" /><span class="dian">否</span>
+                        </label>
+                    </div>
+                    <div class="dp">
+                        <label for="three1">
+                            <span><i>*</i>是否三证合一:</span>
+                            <input type="radio" id="three1" class="dian" name="three" value="three1" /><span class="dian">是</span>
+                        </label>
+                        <label for="three2">
+                            <input type="radio" id="three2" class="dian" name="three" value="three2" /><span class="dian">否</span>
+                        </label>
+                    </div>
+                    <div class="enterName">
+                        <label>
+                            <span><i>*</i>企业法人姓名:</span><input type="text" placeholder="请输入企业法人的真实姓名" />
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <span><i>*</i>企业法人邮箱:</span><input type="text" placeholder="请输入常用邮箱，便于审核信息及后期规则的及时送达" />
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <span><i>*</i>企业法人手机号:</span><input type="text" placeholder="请输入管理人常用手机号，不支持座机号" />
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <span><i>*</i>再次输入企业法人手机号:</span><input type="text" placeholder="请再次输入手机号" />
+                        </label>
+                        <p>注：此手机号为商家提现时，接收验证码的初始手机号</p>
+                    </div>
+                    <div>
+                        <label>
+                            <span><i>*</i>企业法人身份证号:</span><input type="text" placeholder="请输入管理人的证件号（身份证、护照、军官证等均可）" />
+                        </label>
+                        <p>注：请确认您的身份证号码填写无误，该身份证号必须与您上传的身份证照片一致</p>
+                    </div>
+                    <div class="corpor">
+                        <label>
+                            <span><i>*</i>公司名称:</span><input type="text" placeholder="请输入公司名称" />
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <span class="fl"><i>*</i>公司经营地址:</span>
+                            <div class="outer fl">
+                                <select name="province" id="province">
+                                    <option value="请选择">请选择</option>
+                                </select>
+                                <select name="city" id="city">
+                                    <option value="请选择">请选择</option>
+                                </select>
+                                <select name="town" id="town">
+                                    <option value="请选择">请选择</option>
+                                </select>
+                            </div>
+                        </label>
+                        <label><span class="fl"><i></i></span><input type="text" placeholder="请输入公司地址" /></label>
+                    </div>
+                    <div class="hidden">
+                        <label>
+                            <span><i>*</i>营业执照注册号:</span><input type="text" placeholder="请输入15位营业执照注册号" />
+                        </label>
+                        <button onclick="shili(1)">示例</button>
+                    </div>
+                    <div class="hidden">
+                        <label>
+                            <span><i>*</i>组织机构代码:</span><input type="text" placeholder="请输入组织机构代码" />
+                        </label>
+                        <button onclick="shili(2)">示例</button>
+                    </div>
+                    <div class="hidden">
+                        <label>
+                            <span><i>*</i>纳税人识别码:</span><input type="text" placeholder="请输入纳税人识别码" />
+                        </label>
+                        <button onclick="shili(3)">示例</button>
+                    </div>
+                    <div>
+                        <label>
+                            <span><i>*</i>统一社会信用代码:</span><input type="text" placeholder="请输入18位的统一社会信用代码" />
+                        </label>
+                        <button onclick="shili(4)">示例</button>
+                        <p>注：三证合一的营业执照，请全部填写统一社会信用代码，非三证合一的营业执照请在统一社会信用代码处填写营业执照注册号，请根据您的营业执照类型依次填写。</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="main_down main_downTwo1">
+                <h4><span></span>企业资质信息上传<small>(注：上传的图片大小在5M以内，仅支持JPG、PNG格式)</small></h4>
+                <div>
+                    <span><i>*</i>法定代表人身份证正面照片:</span>
+                    <img id="photo4" src="images/shangchuanBg.png" width="109px" height="109px" style="display: block;" />
+                    <input type="file" name="imgOne" class="imgOne" id="imgOne4" onchange="preImg(this.id,'photo4');" />
+                    <i class="fl">示例：</i>
+                    <img src="images/img/idCard1.png" width="120" height="90" alt="" class="shili" />
+                </div>
+                <div>
+                    <span><i>*</i>法定代表人身份证反面照片:</span>
+                    <img id="photo5" src="images/shangchuanBg.png" width="109px" height="109px" style="display: block;" />
+                    <input type="file" name="imgOne" class="imgOne" id="imgOne5" onchange="preImg(this.id,'photo5');" />
+                    <i class="fl">示例：</i>
+                    <img src="images/img/idCard2.png" width="120" height="90" alt="" class="shili" />
+                </div>
+                <div class="data">
+                    <span><i>*</i>法定代表人身份证有效期:</span>
+                    <input type="date" /><small>至</small><input type="date" />
+                </div>
+                <div>
+                    <span><i>*</i>营业执照:</span>
+                    <img id="photo6" src="images/shangchuanBg.png" width="109px" height="109px" style="display: block;" />
+                    <input type="file" name="imgOne" class="imgOne" id="imgOne6" onchange="preImg(this.id,'photo6');" />
+                </div>
+                <div>
+                    <span><i>*</i>开户许可证:</span>
+                    <img id="photo7" src="images/shangchuanBg.png" width="109px" height="109px" style="display: block;" />
+                    <input type="file" name="imgOne" class="imgOne" id="imgOne7" onchange="preImg(this.id,'photo7');" />
+                </div>
+                <div>
+                    <span><i>*</i>质检报告:</span>
+                    <small>(必选,最多不超过<i>13</i>张)</small>
+                    <!-- <small class="image"><img id="photo4" src="images/shangchuanBg.png" width="109px" height="109px" style="display: block;" /></small>
+                    <input type="file" name="imgOne4" class="imgOne" id="imgOne4" onchange="preImg(this.id,'photo4');" /> -->
+                    <div id="app">
+                        <div class="upload_warp_left fl" @click="fileClick" style=" width:109px; margin:0;">
+                            <img id="photo3" src="images/shangchuanBg.png" width="109px" height="109px" />
+                        </div>
+                        <div class="upload">
+                            <input @change="fileChange($event)" type="file" id="upload_file"multiple="multiple" />
+                        </div>
+                        <span class="upload_warp_img" v-show="imgList.length!=0" style="width:600px;">
+                            <span class="upload_warp_img_div" v-for="(item,index) of imgList">
+                                <div class="upload_warp_img_div_top">
+                                    <!-- <div class="upload_warp_img_div_text"></div> -->
+                                    <img src="images/del.png" class="upload_warp_img_div_del" @click="fileDel(index)" />
+                                </div>
+                                <img :src="item.file.src" class="appEnd"/>
+                            </span>
+                        </span>
+                    </div>
+                    <p class="clear">注:</p>
+                    <p>1、经营<i>食品及酒类</i>者需在质检报告处上传<i>食品流通许可证</i></p>
+                    <p>2、目前只允许企业店铺经营酒类，需在质检报告处上传以下任一证件：酒类流通许可证（酒类流通登记备案）</p>
+                </div>
+            </div>
+            <div class="main_down main_downthree">            
+                <h4><span></span>商标信息上传<small> (注：上传的图片大小在5M以内，仅支持JPG、PNG格式)</small></h4>
+                <div class="group-item">
+                    <div>
+                        <label>
+                            <span><i>*</i>商标注册号:</span><input type="text" placeholder="商标注册号" />
+                        </label>
+                    </div>
+                    <i class="del">删除</i>
+                    <div>
+                        <label>
+                            <span><i>*</i>商标注册证明:</span>
+                            <img id="photo5" src="images/shangchuanBg.png" width="109px" height="109px" style="display: block;" />
+                            <input type="file" name="imgOne5" class="imgOne" id="imgOne5" onchange="preImg(this.id,'photo5');" />
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <span><i>*</i>品牌授权证明:</span>
+                            <img id="photo6" src="images/shangchuanBg.png" width="109px" height="109px" style="display: block;" />
+                            <input type="file" name="imgOne6" class="imgOne" id="imgOne6" onchange="preImg(this.id,'photo6');" />
+                        </label>
+                    </div>
+                    <div class="data">
+                        <label>
+                            <span><i>*</i>品牌授权有效期:</span>
+                            <input type="date" /><small>至</small><input type="date" />
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="yaoqing">
+                <div>
+                    <button>添加更多商标信息</button>
+                </div>
+                <label>
+                    <span>入驻邀请码:</span>
+                    <input type="text" placeholder="若无可不填" />
+                </label>
+            </div>
+            <div class="clear"></div>
+            <div class="sure">
+                <a href="javascript:void(0)"><button>上一步</button></a>
+                <a href="javascript:void(0)"><button class="queding">下一步</button></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 底部 -->
+    <footer>
+        <div class="center">
+            <div class="top">
+                <ul>
+                    <span><a href="#">首页</a></span><!--
+                    --><span><a href="#">网站地图</a></span><!--
+                    --><span><a href="#">会员买天天特价</a></span><!--
+                    --><span><a href="#">会员买</a></span><!--
+                    --><span><a href="#">淘宝活动报名入口</a></span><!--
+                    --><span class="gzwm">下载App</span>
+                </ul>
+            </div>
+            <p class="zhong">
+                <span></span><img src="images/weixin.png" alt="" />
+            </p>
+            <div class="down">
+                <p>&copy; 2011-2016 会员买 – 大连金硕科技有限公司 旗下购物商城 - 辽ICP备15004340号
+                    <a href="#"><img src="images/img/pic1.gif" alt="" /></a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="zhedang"></div>
+    <div class="shouji">
+        <div>
+            <h4>提示</h4>
+            <p><span>入驻人姓名将会绑定店铺提现账户名，并且不能更改，后期提现将只能提到该入驻人的银行卡内。确认您的入驻人姓名是正确的吗？</span></p>
+            <span><input type="submit" value="确认" /><input type="submit" value="关闭" /><input type="submit" value="取消" /></span>
+        </div>
+    </div>
+    <div class="shili1">
+        <span class="endGb">x</span>
+        <h1>示例</h1>
+        <p></p>
+        <div>
+            <button class="endGb">知道了</button>
+        </div>
+    </div>
+
+    <script src="js/jquery-1.7.1.min.js"></script>
+    <script src="js/area.js"></script>
+    <script src="js/select.js"></script>
+    <script src="js/enterprise.js"></script>
+    <script src="js/vue2.2.2.js"></script>
+    <script>
+    /* 增加 */
+        var pict=$(".main .main_downTwo1 div:nth-child(7) input");
+        var i=10;
+        pict.change(function(){
+            i++;
+            var picture4=$(".main .main_downTwo1 div:nth-child(7) img").attr("src");
+            pict.hide();
+            if(picture4!="images/shangchuanBg.png"){
+                $(".main .main_downTwo1 div:nth-child(7)").append('<img id="photo'+i+'" src="images/shangchuanBg.png" width="109px" height="109px" style="display: block;" /><input type="file" name="imgOne'+i+'" class="imgOne" id="imgOne'+i+'" onchange="preImg(this.id,photo'+i+');" />');
+            }
+            /*function preImg(sourceId, targetId) {
+                var url = getFileUrl(sourceId);
+                var imgPre = document.getElementById(targetId);
+                imgPre.src = url;
+            }*/
+        });
+    /* 本地上传 */
+        function getFileUrl(sourceId) {
+            var url;
+            if (navigator.userAgent.indexOf("MSIE")>=1) { // IE
+                url = document.getElementById(sourceId).value;
+            } else if(navigator.userAgent.indexOf("Firefox")>0) { // Firefox
+                url = window.URL.createObjectURL(document.getElementById(sourceId).files.item(0));
+            } else if(navigator.userAgent.indexOf("Chrome")>0) { // Chrome
+                url = window.URL.createObjectURL(document.getElementById(sourceId).files.item(0));
+            }
+            return url;
+        }
+    /* 本地上传/预览图片 */
+        function preImg(sourceId, targetId) { 
+            var url = getFileUrl(sourceId); 
+            var imgPre = document.getElementById(targetId); 
+            imgPre.src = url; 
+        }
+
+    /* 本地上传判断宽高大小(本地不可测试,服务器才行) */
+        /*function validate_img(a){
+            var file = a.value;
+            if(!/.(gif|jpg|jpeg|png|GIF|JPG|png)$/.test(file)){
+                alert("图片类型必须是.gif,jpeg,jpg,png中的一种");
+                return false;
+            }else{
+                var image = new Image();
+                image.src = file;
+                var height = image.height;
+                var width = image.width;
+                var filesize = image.filesize;
+                alert(height+"x.."+filesize);
+                if(width>80 && height>80 && filesize>102400){
+                    alert('请上传80*80像素 或者大小小于100k的图片');
+                    return false;
+                }
+            }
+            alert("图片通过");
+        }*/
+    /* 图片大小判定 */
+        function validate(a){
+            var file = a.value;
+            if(!/.(jpg|png)$/.test(file)){
+              alert("图片类型必须是.gif,jpeg,jpg,png中的一种");
+              return;
+            }else{
+                 var image = new Image();
+                 image.src = file;
+                 var height = image.height;
+                 var width = image.width;
+                 var filesize = image.filesize;
+                  /*alert(height+"x.."+width);*/
+                 if(width!=300 && height!=300 && filesize>5120+'kb'){
+                  alert('请上传大小5M的图片');
+                  return;
+                 }
+            }
+            /*alert("图片通过");*/
+        }
+
+    /* 点击示例 */
+        function shili(i){
+            $(".zhedang").show();
+            $(".shili1").show();
+            $(".shili1 p").empty();
+            $(".shili1 p").append('<img src="images/shili'+i+'.jpg" alt="" />')
+        }
+    </script>
+    <script>
+        var app = new Vue({
+            el: '#app',
+            data () {
+                return {
+                    imgList: [],
+                    size: 0
+                }
+            },
+            methods: {
+                fileClick(){
+                    document.getElementById('upload_file').click()
+                },
+                fileChange(el){
+                    if (!el.target.files[0].size) return;
+                    this.fileList(el.target.files);
+                    el.target.value = ''
+                },
+                fileList(files){
+                    for (let i = 0; i < files.length; i++) {
+                        this.fileAdd(files[i]);
+                    }
+                },
+                fileAdd(file){
+                    this.size = this.size + file.size;//总大小
+                    let reader = new FileReader();
+                    reader.vue = this;
+                    reader.readAsDataURL(file);
+                    reader.onload = function () {
+                        file.src = this.result;
+                        this.vue.imgList.push({
+                            file
+                        });
+                    }
+                },
+                fileDel(index){
+                    this.size = this.size - this.imgList[index].file.size;//总大小
+                    this.imgList.splice(index, 1);
+                    $(".upload").show();
+                    $(".upload_warp_left").show();
+                },
+                bytesToSize(bytes){
+                    if (bytes === 0) return '0 B';
+                    let k = 1000, // or 1024
+                      sizes = ['B', 'KB', 'MB', 'GB', 'TB', 'PB', 'EB', 'ZB', 'YB'],
+                      i = Math.floor(Math.log(bytes) / Math.log(k));
+                    return (bytes / Math.pow(k, i)).toPrecision(3) + ' ' + sizes[i];
+                },
+                dragenter(el){
+                    el.stopPropagation();
+                    el.preventDefault();
+                },
+                dragover(el){
+                    el.stopPropagation();
+                    el.preventDefault();
+                },
+                drop(el){
+                    el.stopPropagation();
+                    el.preventDefault();
+                    this.fileList(el.dataTransfer.files);
+                }
+            }
+        });
+    </script>
+</body>
+</html>
