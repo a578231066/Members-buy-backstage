@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css" type="text/css" />
+    <link rel="stylesheet" href="css/gonggong.css" type="text/css" />
+    <link rel="stylesheet" href="css/shoppingMall.css" type="text/css" />
+</head>
+<body>
+    <!-- 头部 -->
+    <header>
+        <div class="login">
+            <div class="center">
+                <div class="titleCon">
+                    <ul>
+                        <li class="fl"><a href="#">帮助中心</a></li>
+                        <li class="fl" data-clipboard-action="copy"><a href="javascript:void(0);" class="btn" data-clipboard-text="http://www.huiyuanmai.com/">收藏本站</a></li>
+                        <li class="fl"><a href="#"><i></i>会员买手机商城</a></li>
+                        <li class="fr"><a href="#">商家报名</a></li>
+                        <li class="fr"><a href="#">我的订单</a></li>
+                        <li class="fr">
+                            <div class="fl"><a href="#"><img src="images/login_qq.png"/>QQ登录</a></div>
+                            <div class="fl"><a href="#">登录</a></div>
+                            <div class="fl"><a href="#">注册</a></div> 
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="logo_nav">
+            <div class="center">
+                <div class="logo fl"><a href="#"><img src="images/logo.png" alt="" /></a></div>
+                <div class="nav fl">
+                    <ul>
+                        <li><a href="#" class="active">招商首页</a></li>
+                        <li><a href="#">入驻标准</a></li>
+                        <li><a href="#">业务介绍</a></li>
+                        <li><a href="#">收费标准</a></li>
+                        <li><a href="#">常见问题</a></li>
+                    </ul>
+                    <ul class="fr">
+                        <a href="#"><input type="submit" value="登录" /></a>
+                        <a href="#"><input type="submit" value="注册" /></a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- 内容 -->
+    <div class="main">
+        <div class="center">
+            <div class="main_top">
+                <ul>
+                    <li class="current">
+                        <i>1</i>
+                        <span>个人/企业信息填写</span>
+                    </li>
+                    <li>
+                        <i>2</i>
+                        <span>店铺信息填写</span>
+                    </li>
+                    <li>
+                        <i>3</i>
+                        <span>资质审核</span>
+                    </li>
+                    <li>
+                        <i>4</i>
+                        <span>签约</span>
+                    </li>
+                    <li>
+                        <i>5</i>
+                        <span>入驻成功</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="main_down">
+                <h4><span></span>店铺入住人基本信息</h4>
+                <div>
+                    <label class="name">
+                        <span><i>*</i>入驻人姓名:</span><input type="text" placeholder="请输入管理人的真实姓名" />
+                    </label>
+                    <p class="tishi">入驻人姓名将会绑定店铺提现账户名，并且不能更改，后期提现将只能提到该入驻人的银行卡内。请确认您入驻人姓名是否填写正确。</p>
+                </div>
+                <div>
+                    <label>
+                        <span><i>*</i>入驻人邮箱:</span><input type="text" placeholder="请输入常用邮箱，便于审核信息及后期规则的及时送达" />
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        <span><i>*</i>入驻人手机号:</span><input type="text" placeholder="请输入管理人常用手机号，不支持座机号" />
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        <span><i>*</i>再次输入入驻人手机号:</span><input type="text" placeholder="请再次输入手机号" />
+                    </label>
+                    <p>注：此手机号为商家首次登陆后台的账号，提现接收验证码的初始手机号</p>
+                </div>
+                <div>
+                    <label>
+                        <span><i>*</i>身份证号:</span><input type="text" placeholder="请输入管理人的证件号（身份证、护照、军官证等均可）" />
+                    </label>
+                    <p>注：请确认您的身份证号码填写无误，该身份证号必须与您上传的身份证照片一致</p>
+                </div>
+                <div>
+                    <label>
+                        <span><i>*</i>紧急联系人名称:</span><input type="text" placeholder="紧急联系人与管理人不能为同一人" />
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        <span><i>*</i>紧急联系人手机号:</span><input type="text" placeholder="紧急联系人手机号不能与管理人手机号相同" />
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        <span><i>*</i>再次输入紧急联系人手机号码:</span><input type="text" placeholder="请输入紧急联系人手机号码" />
+                    </label>
+                </div>
+                <!-- <div class="dp">
+                    <label for="yes">
+                        <span><i>*</i>是否存在第三方平台店铺:</span><input type="radio" class="dian" id="yes" name="one" value="1" /> <span class="dian">是</span>
+                    </label> 
+                    <label for="no">
+                        <input type="radio" id="no" class="dian" name="one" value="0" /> <span class="dian">否</span>
+                    </label>
+                </div>
+                <div class="yes">
+                    <label>
+                        <span><i>*</i>第三方店铺链接:</span>
+                        <select>
+                            <option value="0">请选择</option>
+                            <option value="1">淘宝</option>
+                            <option value="2">京东</option>
+                            <option value="3">天猫</option>
+                            <option value="4">唯品会</option>
+                            <option value="5">折800</option>
+                            <option value="6">贝贝</option>
+                            <option value="7">卷皮</option>
+                            <option value="8">蘑菇街</option>
+                            <option value="9">聚美优品</option>
+                            <option value="10">美丽说</option>
+                        </select>
+                        <input type="text" placeholder="请输入第三方链接" /><button class="jia">+</button> <button class="jian">-</button>
+                    </label> 
+                </div> -->
+                <div class="main_downTwo">
+                    <h4><span></span>店铺入住人基本信息<small>(注：上传的相片，横图长宽像素最大为1000*700，竖图长宽像素最大为1000*1400，图片大小在5M以内)</small></h4>
+                    <div>
+                        <span><i>*</i>身份证正面:</span>
+                        <img id="photo" src="images/shangchuanBg.png" width="109px" height="109px" style="display: block;" />
+                        <input type="file" name="imgOne" class="imgOne" id="imgOne" onchange="preImg(this.id,'photo')" />
+                    </div>
+                    <div>
+                        <span><i>*</i>身份证反面:</span>
+                        <img id="photo1" src="images/shangchuanBg.png" width="109px" height="109px" style="display: block;" />
+                        <input type="file" name="imgOne1" class="imgOne" id="imgOne1" onchange="preImg(this.id,'photo1')" />
+                    </div>
+                    <div class="data">
+                        <span><i>*</i>身份证号有效期:</span>
+                        <input type="date" /><small>至</small><input type="date" />
+                    </div>
+                    <div>
+                        <span><i>*</i>手持身份证头部照片:</span>
+                        <img id="photo2" src="images/shangchuanBg.png" width="109px" height="109px" style="display: block;" />
+                        <input type="file" name="imgOne2" class="imgOne" id="imgOne2" onchange="preImg(this.id,'photo2')" />
+                        <i class="fl">示例：</i>
+                        <img src="images/img/person1.png" height="109" width="109" alt="" class="shili" />
+                        <ul class="fl">
+                            <li>1、请手持本人身份证</li>
+                            <li>2、照片需免冠，建议素颜</li>
+                            <li>3、必须看清证件号码且证件号码不能被遮挡</li>
+                            <li>4、照片必须支持jpg、png格式</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <span><i>*</i>半身照片:</span>
+                        <img id="photo3" src="images/shangchuanBg.png" width="109px" height="109px" style="display: block;" />
+                        <input type="file" name="imgOne3" class="imgOne" id="imgOne3" onchange="preImg(this.id,'photo3')" />
+                        <i class="fl">示例：</i>
+                        <img src="images/img/person2.png" height="109" width="109" alt="" class="shili" />
+                        <ul class="fl">
+                            <li>1、请手持本人身份证</li>
+                            <li>2、照片需免冠，建议素颜</li>
+                            <li>3、必须看清证件号码且证件号码不能被遮挡</li>
+                            <li>4、照片必须支持jpg、png格式</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sure">
+                    <a href="javascript:void(0)"><button>上一步</button></a>
+                    <a href="javascript:void(0)"><button class="queding">下一步</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 底部 -->
+    <footer>
+        <div class="center">
+            <div class="top">
+                <ul>
+                    <span><a href="#">首页</a></span><!--
+                    --><span><a href="#">网站地图</a></span><!--
+                    --><span><a href="#">会员买天天特价</a></span><!--
+                    --><span><a href="#">会员买</a></span><!--
+                    --><span><a href="#">淘宝活动报名入口</a></span><!--
+                    --><span class="gzwm">下载App</span>
+                </ul>
+            </div>
+            <p class="zhong">
+                <span></span><img src="images/weixin.png" alt="" />
+            </p>
+            <div class="down">
+                <p>&copy; 2011-2016 会员买 – 大连金硕科技有限公司 旗下购物商城 - 辽ICP备15004340号
+                    <a href="#"><img src="images/img/pic1.gif" alt="" /></a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="zhedang"></div>
+    <div class="shouji">
+        <div>
+            <h4>提示</h4>
+            <p><span>入驻人姓名将会绑定店铺提现账户名，并且不能更改，后期提现将只能提到该入驻人的银行卡内。确认您的入驻人姓名是正确的吗？</span></p>
+            <span><input type="submit" value="确认" /><input type="submit" value="关闭" /><input type="submit" value="取消" /></span>
+        </div>
+    </div>
+
+
+    <script src="js/jquery-1.7.1.min.js"></script>
+    <script src="js/shoppingMall.js"></script>
+    <script>
+    /* 本地上传 */
+        function getFileUrl(sourceId) {
+            var url;
+            if (navigator.userAgent.indexOf("MSIE")>=1) { // IE
+                url = document.getElementById(sourceId).value;
+            } else if(navigator.userAgent.indexOf("Firefox")>0) { // Firefox
+                url = window.URL.createObjectURL(document.getElementById(sourceId).files.item(0));
+            } else if(navigator.userAgent.indexOf("Chrome")>0) { // Chrome
+                url = window.URL.createObjectURL(document.getElementById(sourceId).files.item(0));
+            }
+            return url;
+        }
+        function preImg(sourceId, targetId) { 
+            var url = getFileUrl(sourceId); 
+            var imgPre = document.getElementById(targetId); 
+            imgPre.src = url; 
+        }
+    </script>
+</body>
+</html>
