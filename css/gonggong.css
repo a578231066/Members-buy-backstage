@@ -1,0 +1,148 @@
+/**************************************** 头部 ****************************************/
+header{width: 100%; height: 112px;}
+/**************************************** 头部登录 ****************************************/
+header .login{ background: #363636; width: 100%; min-width: 1200px; }
+header .login .titleCon{ width: 1200px; margin: 0 auto; }
+header .login .titleCon ul:after{ content: ""; clear: both; display: block; }
+header .login .titleCon ul li { display: list-item;
+    text-align: -webkit-match-parent; }
+header .login .titleCon ul li img{ width: 20px; vertical-align: -6px; }
+header .login .titleCon ul li a { display: inline-block; margin: 0 10px; height: 36px; line-height: 36px; vertical-align: middle; font-size: 12px;
+    color: #bfbfbf; }
+header .login .titleCon ul li a:hover{ color:#ff6767; }
+header .login .titleCon ul li a i{ background: url(../images/phoneH.png); display: inline-block; width: 22px; height: 15px; width: 22px;height: 15px; -ms-animation: rotateme .3s infinite; -o-animation: rotateme .3s infinite; -moz-animation: rotateme .3s infinite; -wekit-animation: rotateme .3s infinite; animation: rotateme .3s infinite; vertical-align: -3px; margin-right: 3px; }
+
+/*css3 动画*/
+@-o-keyframes rotateme {
+    0% {-o-transform: rotate(-10deg);}
+    20%{-o-transform: rotate(0deg);}
+    50%{-o-transform: rotate(10deg);}
+    70%{-o-transform: rotate(0deg);}
+    100%{-o-transform: rotate(-10deg);}
+}
+
+@-moz-keyframes rotateme {
+    0% {-moz-transform: rotate(-10deg);}
+    20%{-moz-transform: rotate(0deg);}
+    50%{-moz-transform: rotate(10deg);}
+    70%{-moz-transform: rotate(0deg);}
+    100%{-moz-transform: rotate(-10deg);}
+}
+
+@-ms-keyframes rotateme {
+    0% {-ms-transform: rotate(-10deg);}
+    20%{-ms-transform: rotate(0deg);}
+    50%{-ms-transform: rotate(10deg);}
+    70%{-ms-transform: rotate(0deg);}
+    100%{-ms-transform: rotate(-10deg);}
+}
+
+@-webkit-keyframes rotateme {
+    0% {-webkit-transform: rotate(-10deg);}
+    20%{-webkit-transform: rotate(0deg);}
+    50%{-webkit-transform: rotate(10deg);}
+    70%{-webkit-transform: rotate(0deg);}
+    100%{-webkit-transform: rotate(-10deg);}
+}
+
+@keyframes rotateme {
+    0% {transform: rotate(-10deg);}
+    20%{transform: rotate(0deg);}
+    50%{transform: rotate(10deg);}
+    70%{transform: rotate(0deg);}
+    100%{transform: rotate(-10deg);}
+}
+
+/**************************************** logo 导航 ****************************************/
+header .logo_nav{ width: 100%; height: 80px; line-height: 80px;}
+
+/**************************************** logo ****************************************/
+header .logo_nav .logo img{ vertical-align:middle;}
+header .logo_nav .logo span{ display: inline-block; font-size: 23px; color: #ED0F08; padding-left: 15px; border-left:1px solid #f2f2f2;}
+
+/**************************************** 导航 ****************************************/
+header .logo_nav .nav{ width: 900px; margin-left:40px;}
+header .logo_nav .nav li{width: 100px; height: 80px; line-height: 80px; text-align: center; float: left; font-size: 14px; font-size: 14px; letter-spacing: 1px;}
+header .logo_nav .nav li a{ display: inline-block; width: 80px; height: 70px; line-height: 90px; color: #000; font-size: 16px;}
+header .logo_nav .nav li a:hover{color: #0A6DEE;}
+header .logo_nav .nav li a.active{ color: #0A6DEE; border-bottom:3px solid #0A6DEE;}
+
+header .logo_nav .nav input{ width: 80px; height: 30px; background: #fff; border:1px solid #999999; border-radius:5px; letter-spacing: 2px; cursor:pointer;}
+header .logo_nav .nav a:last-child input{background: #0A6DEE; border:none; color: #fff; margin-left: 10px;}
+header .logo_nav .nav a:first-child input:hover{background: #0A6DEE; border:none; color: #fff;}
+
+
+/**************************************** 轮播 ****************************************/
+.daogou_banner{width: 100%; height: 530px; margin-top: 1px; background: url(../images/daogou/banner.jpg) no-repeat; background-size:100% 100%; position:relative;}
+.banner .zhedang{ width: 100%; height: 100px; background: rgba(0,0,0,.3); position:absolute; left: 0; bottom: 0;text-align: center;}
+.banner .zhedang li{ float: left; width: 16.5%; height: 85px; font-size: 18px; padding-top: 30px; border-left:1px solid rgba(255, 255, 255, 0.2);}
+.banner .zhedang li a{ color:#fff;}
+.banner .zhedang li img{ width: 34px; height: 34px; margin-right: 20px; vertical-align: middle;}
+.banner .zhedang li:first-child{ font-size: 20px;}
+.banner .zhedang li:first-child img{ margin-left: 20px; margin-right: 0;}
+.banner .zhedang li>a>span{display: inline-block; height: 50px;text-align: left; padding-top: 15px; font-weight:700;}
+.banner .zhedang li span>span{ font-size: 14px; opacity: .8; font-weight:400;}
+.banner .zhedang li:hover{ background: rgba(255,255,255,.2);}
+
+
+/**************************************** 底部 ****************************************/
+footer{width: 99.9%; height: auto; background: #393B3D; position:relative; border:1px solid #393B3D; overflow: hidden;}
+footer .top{width: 100%; height: 100px; text-align: center; border-bottom:1px solid #616264;}
+footer .top span{ display: inline-block; padding:0 30px; margin-top:40px; font-size: 14px; color: #C0C1C1; border-right:1px solid #42566E; cursor:pointer;}
+footer .top span a{ color: #C0C1C1;}
+footer .top span a:hover{ text-decoration: underline;}
+footer .top span:last-child{border-right:none;}
+footer p.zhong{ width: 600px; height: 100px; color: #F1F1F1; position:absolute; top: 0; right: 0; display: none;}
+footer p.zhong span{display: inline-block; width: 0; height: 0; border-width: 15px 15px 15px 0; border-color: transparent #fff; border-style: solid; position:absolute; top: 35px; left: 0;}
+footer p.zhong img{ width: 100px; height: 100px; vertical-align: middle; margin-left: 15px;}
+footer .down{width: 100%; height: 48px; text-align: center; font-size: 12px; color: #888989; line-height: 50px;}
+footer .down img{vertical-align: middle; margin-left: 10px;}
+
+/**************************************** 返回顶部 ****************************************/
+#go{width: 60px; height: 60px; background: #3C78D8; border-radius:100%; position:fixed; right: 20px; bottom:40px; display: none; text-align: center; cursor:pointer;}
+#go img{margin-top: 2px;}
+
+
+@media(min-width: 1200px){
+    footer p.zhong{width: 250px;}
+}
+
+@media(min-width: 1280px){
+    footer p.zhong{width: 290px;}
+}
+
+@media(min-width: 1324px){
+    footer p.zhong{width: 300px;}
+}
+
+@media(min-width: 1380px){
+    footer p.zhong{width: 330px;}
+}
+
+@media(min-width: 1452px){
+    footer p.zhong{width: 380px;}
+}
+
+@media(min-width: 1534px){
+    footer p.zhong{width: 420px;}
+}
+
+@media(min-width: 1580px){
+    footer p.zhong{width: 440px;}
+}
+
+@media(min-width: 1700px){
+    footer p.zhong{width: 500px;}
+}
+
+@media(min-width: 1780px){
+    footer p.zhong{width: 540px;}
+}
+
+@media(min-width: 1870px){
+    footer p.zhong{width: 580px;}
+}
+
+@media(min-width: 1892px){
+    footer p.zhong{width: 580px;}
+}
