@@ -1,0 +1,192 @@
+/*
+    项目负责人：赵强
+    项目创建日期:2017.9.11
+    最新更新:2017.9.11
+    修改人员:赵强
+    修改日期:
+    修改原因:
+    修改代码行数区间:
+*/
+.main{width: 100%; height: auto; padding-top: 20px; background: #F1F1F1;}
+.mainZizhi{width: 99.9%; border:1px solid #F1F1F1;}
+.main .main_top{width: 100%; height: 102px; background: #fff;}
+.main .main_top li{width: 20%; font-size: 18px; text-align: center; margin-top: 20px; position: relative; float: left;}
+.main .main_top li i{display: block; width: 30px; height: 30px; border-radius:100%; line-height: 30px; text-align: center; background: #e5e5e5; font-style:normal; color: #878787; margin:0 auto;}
+.main .main_top li span{ margin-top: 10px; display: inline-block;}
+.main .main_top li:before{content:"" ; position:absolute; top: 15px; right: -18%; width: 38%; height: 9px; background: url(../images/shoppingMall-top.png) no-repeat; background-size: 100% 100%;}
+.main .main_top li:last-child:before{ background:none;}
+.main .main_top li.current i{ color: #fff; background: #FD7C69;}
+
+.main .main_down{width: 100%; height: auto; margin-top: 20px; background: #fff;}
+.main .main_down h4{border-bottom: 1px solid #ccc; margin:0 20px; padding:10px 20px 10px 0; margin-bottom: 30px; font-size: 18px; font-weight: 400;}
+.main .main_down h4 span{display: inline-block; width: 6px; height: 20px; vertical-align: middle; background: #fd7c6d; margin-right:10px;}
+.main .main_down div{width: 90%; margin-left: 100px; margin-bottom: 20px;}
+.main .main_down div span{ display: inline-block; width: 220px; text-align: right; letter-spacing: 1px; font-size: 14px; color: #626262; font-weight: 700;}
+.main .main_down div span i{ color: #f00; font-style:normal; margin-right:10px;}
+.main .main_down div input{ width: 400px; height:32px; margin-left: 20px; border:1px solid #E5E5E5; border-radius:5px; box-shadow: inset 0 1px 1px rgba(0,0,0,.075); padding-left: 10px;}
+.main .main_down div p{width: 600px; height: auto; color: red; font-size: 14px; padding-left:240px; margin-top: 10px;}
+.main .main_down div p.tishi{display: none;}
+.main .main_down div p.tishi1{ width:80%; display: block; color: #333;}
+.main .main_down div p.tishi1 small{color: #FF0000; font-size: 14px;}
+.main .main_down div p.tishi1 span.xiao{ width: 70px; font-weight: 400; color: #0000FF; cursor:pointer;}
+.main .main_down div p.tishi1 span:last-child{width: 240px; color: #f00; font-weight: 400; display: none; margin-top: 5px;}
+.main .main_down div p.tishi1 span.downTwo{width: 500px; font-weight: 400; color: #f00; font-size: 14px; display: none;}
+.main .main_down div p.tishi1 span:last-child.active{ display: block;}
+
+.main .main_down div.logo{width: 90%;}
+.main .main_down div.logo span{ float: left;}
+.main .main_down div.logo img{float: left; margin-left: 20px;}
+.main .main_down div.logo input{ width: 70px; height: 23px; padding: 0; margin: 0; margin-left: 40px; margin-top: 40px;}
+.main .main_down div.logo p{ width: 500px; margin-top: 50px; color: #333;}
+.main .main_down div.logo ul{ width: 58%; margin: 10px auto;}
+.main .main_down div.logo li{ width: 33%; height: auto; color: #0000FF; font-size: 14px;  margin-top: 10px;text-align: left; float: left; cursor: pointer;}
+.main .main_down div.logo li img{ width: 80%; display: none;}
+.main .main_down div.logo li.active img{display: block;}
+
+.main .main_down div.selec select{width: 109px; height: 34px; border:1px solid #ccc; padding:6px 12px; border-radius: 4px; box-shadow: inset 0 1px 1px rgba(0,0,0,.075); color: #555; margin-left: 20px;}
+
+.main .main_down div.size{padding-bottom: 80px; border-bottom:1px solid #CCC;}
+.main .main_down div textarea{width: 500px; vertical-align: top; margin-left: 20px; border-radius:5px;}
+.main .main_down div.size p{width: 75%; color: #333; height: 30px; line-height: 30px;}
+.main .main_down div.size p small{color: #ff0000; font-size: 14px;}
+
+.main .main_down div label:nth-child(3){background: #f00;}
+.main .main_down div label input.dian{ width: 15px; height: 30px; box-shadow: none; vertical-align: text-bottom; margin-bottom:-8px; }
+.main .main_down div label span.dian{ display: inline-block; width: 50px; text-align: left; margin-left: 4px;}
+.main .main_down div.dp i.redxz{color: #00f; font-style: normal; font-size:18px; display: none;}
+.main .main_down div.dp i.redxz small{font-size:40px; vertical-align: -8px;}
+
+.main .main_down div.yes{display: none;}
+.main .main_down div.yes label{display: block; margin-bottom: 10px;}
+.main .main_down div.yes select{width: 90px; height: 34px; border:1px solid #ccc; padding:6px 12px; border-radius: 4px; box-shadow: inset 0 1px 1px rgba(0,0,0,.075); color: #555;}
+.main .main_down div.yes input{width: 400px;}
+.main .main_down div.yes button{ padding:6px 12px; margin-left: 8px; font-size: 18px; background: #337AB7; border-radius:5px; color: #fff; border:none; cursor: pointer;}
+.main .main_down div.yes button:hover{background: #286090;}
+.main .main_down div.yes button.jian{padding:5px 14px; font-size: 20px; display: none;}
+
+.main .main_down div label input.active{ vertical-align: middle; box-shadow: -1px 0 2px 2px  #D6EAF9,0 -1px 2px 2px #D6EAF9;}
+.main .main_down .main_downOne .enterName{ display: none;}
+
+.main .main_downOne div.outer{width: 800px; margin-left: 20px;}
+.main .main_downOne div.outer select{ width: 140px; height: 32px; border-radius:4px; margin-left:20px; box-shadow: inset 0 1px 1px rgba(0,0,0,.075); border:1px solid #E5E5E5;}
+.main .main_downOne div.outer select:first-child{margin-left:0;}
+/* .main .main_downTwo1 div:nth-child(7) img{border:1px solid #f00;} */
+.main .main_downOne div button{ width: 60px; height: 35px; color: #222; border:1px solid #CCC; background: #fff; cursor: pointer; border-radius:5px;}
+.main .main_downOne div button:hover{border:1px solid #ADADAD; background: #E6E6E6;}
+.main .main_down .main_downTwo,.main .main_down .main_downOne{ width: 100%; margin-left: 0; margin-bottom:0; padding:0; padding-bottom: 40px;}
+.main .main_down .main_downOne{padding-bottom: 1px;}
+.main .main_down .main_downTwo{ border-bottom:1px solid #CCC;}
+.main .main_down .main_downTwo h4 span,.main .main_down .main_downOne h4 span{display: inline-block; width: 6px; height: 20px;}
+.main .main_down .main_downTwo div span{ float: left;}
+.main .main_down .main_downTwo h4 small{ font-size: 14px; margin-left: 10px; color: #777;}
+.main .main_down .main_downTwo div{width: 100%; height: 109px;}
+.main .main_down .main_downTwo div img{float: left; margin-left: 50px;}
+.main .main_down .main_downTwo input.imgOne{ width: 70px; height: 23px; padding:0; margin-top: 40px; float: left;}
+.main .main_down .main_downTwo div.data{height: 30px;}
+.main .main_down .main_downTwo div.data input{width: 150px; height: 30px; line-height: 30px; margin-left: 50px;}
+.main .main_down .main_downTwo div.data input:last-child{ margin-left: 25px;}
+.main .main_down .main_downTwo div.data small{display: inline-block; margin-left: 25px;}
+.main .main_down .main_downTwo div i.fl{ width: 20px; margin-left: 40px; font-style:normal; color: #626262; font-size: 15px; font-weight: 700;}
+.main .main_down .main_downTwo div img.shili{ margin-left: 20px;}
+.main .main_down .main_downTwo div ul{ width: 230px; padding-left: 20px; line-height: 25px; font-size: 14px; color: #626262; font-weight: 700; letter-spacing: 1px;}
+.main .main_down .main_downTwo div:last-child{margin-top: 60px;}
+
+.main .main_downTwo1{ width: 100%; margin-left: 0; margin-bottom:0; padding:0; padding-bottom: 40px;}
+.main .main_downTwo1{ margin-top: 0; padding-bottom: 1px;}
+.main .main_downTwo1 h4 span,.main .main_down .main_downOne h4 span{display: inline-block; width: 6px; height: 20px;}
+.main .main_downTwo1 div span{ float: left;}
+.main .main_downTwo1 h4 small{ font-size: 14px; margin-left: 10px; color: #777;}
+.main .main_downTwo1 div{width: 100%; height: 109px;}
+.main .main_downTwo1 div img{float: left; margin-left: 50px;}
+.main .main_downTwo1 input.imgOne{ width: 70px; height: 23px; padding:0; margin-top: 40px; float: left;}
+.main .main_downTwo1 div.data{height: 30px;}
+.main .main_downTwo1 div.data input{width: 150px; height: 30px; line-height: 30px; margin-left: 50px; margin-right: 25px;}
+.main .main_downTwo1 div.data input:last-child{ margin-left: 25px; margin-right: 0;}
+.main .main_downTwo1 div i.fl{ width: 20px; margin-left: 40px; font-style:normal; color: #626262; font-size: 15px; font-weight: 700;}
+.main .main_downTwo1 div img.shili{ margin-left: 20px;}
+.main .main_downTwo1 div ul{ width: 230px; padding-left: 20px; line-height: 25px; font-size: 14px; color: #626262; font-weight: 700; letter-spacing: 1px;}
+.main .main_downTwo1 div:last-child{ height: auto;/* margin-top: 60px; */}
+.main .main_downTwo1 div:last-child small{ margin-left:50px; margin-bottom:20px; font-size: 13px; color: #333; display: inline-block; letter-spacing: 1px;}
+.main .main_downTwo1 div:last-child small i{font-style: normal; color: #f00; font-size: 16px;}
+.main .main_downTwo1 div:last-child p{ width: 70%; color: #333; font-size:14px; line-height: 25px; margin-top: 0;}
+.main .main_downTwo1 div:last-child p i{color: #f00; font-style:normal;}
+
+/* 质检报告 */
+#app{width: 109px; height:109px; margin-left: 270px;}
+#app .upload_warp_left img { margin:0; padding: 0;}
+#app input{ width: 68px; height: 22px; margin:0; padding:0; margin-top: 40px; margin-left: 20px;}
+#app .upload_warp_img{margin:0; float: left;}
+#app .upload_warp_img div{float: left; display: inline-block;}
+#app .upload_warp_img_div{ width: 109px; height: 109px; margin:0; margin-bottom: 10px; margin-right: 10px; float: left; cursor: pointer; position: relative;}
+#app .upload_warp_img_div img { max-width: 100%; max-height: 100%; vertical-align: middle; margin:0;}
+#app .upload_warp_img_div .appEnd{height:109px;}
+#app .upload_warp_img_div_top { width: 100%; height: 30px; background-color: rgba(0,0,0,.5); position: absolute; top: 0; left: 0; margin:0;}
+#app .upload_warp_img_div_del{ width: 16px; position: absolute; top: 6px; right: 4px;}
+
+.main .main_down .size textarea{font-size: 14px; padding:4px 0 0 4px;}
+.main .main_downthree{margin-top:0; overflow: hidden;}
+.main .main_downthree div span{ float: left;}
+.main .main_downthree h4 small{ font-size: 14px; margin-left: 10px; color: #777;}
+.main .main_downthree div.group-item{ width: 49.8%; height: 500px; background: #F9F9F9; margin-left: 0; float: left; border:1px dotted #E4E4E4; border-left:none; position:relative; margin-top:0; margin-bottom: 0;}
+.main .main_downthree div i.del{ width:50px; position:absolute; top: 10px; right: 0; font-weight: 400px; font-size: 14px; color: #337ab7; font-family: "宋体"; letter-spacing: 2px; font-style: normal; cursor: pointer; display: none;}
+.main .main_downthree div.group-item div{ width: 100%; margin-left: 0; margin-top: 20px;}
+.main .main_downthree div.group-item label span{ width: 150px;}
+.main .main_downthree div.group-item label input{ width: 200px;}
+.main .main_downthree div.group-item div:nth-child(2),.main .main_downthree div.group-item div:nth-child(3),.main .main_downthree div.group-item div:nth-child(4){ height: 140px;}
+.main .main_downthree div.group-item div:nth-child(2) img,.main .main_downthree div.group-item div:nth-child(3) img,.main .main_downthree div.group-item div:nth-child(4) img{ margin-left: 20px; margin-top: 20px; float: left;}
+.main .main_downthree div.group-item div:nth-child(2) input,.main .main_downthree div.group-item div:nth-child(3) input,.main .main_downthree div.group-item div:nth-child(4) input{ width: 68px; height: 23px; margin: 60px 0 0 20px; padding:0; float: left;}
+.main .main_downthree div.group-item div.data input{width: 150px;}
+.main .main_downthree div.group-item div.data small{display: inline-block; margin-left: 20px;}
+.main .yaoqing{ width: 100%; background: #fff; padding: 20px 0; border-bottom:1px solid #E5E5E5;}
+.main .yaoqing div{padding-left: 300px; margin-bottom: 15px;}
+.main .yaoqing div button{border:1px solid #BFBFBF; color: #333; background: #fff; width: 150px; height: 35px; border-radius: 5px; cursor: pointer;}
+.main .yaoqing label{ padding-left:200px;}
+.main .yaoqing label span{ color: #626262; font-weight: 700; font-size: 14px;}
+.main .yaoqing label input{ width: 300px; height: 30px; border-radius:5px; border:1px solid #E5E5E5; box-shadow: inset 0 1px 1px rgba(0,0,0,.075); margin-left: 40px; padding-left: 10px;}
+
+/* .main .main_downthree div{width: 100%; height: 109px;}
+.main .main_downthree div img{float: left; margin-left: 50px;}
+.main .main_downthree input.imgOne{ width: 70px; height: 23px; padding:0; margin-top: 40px; float: left;}
+.main .main_downthree div.data{height: 30px;}
+.main .main_downthree div.data input{width: 150px; height: 30px; line-height: 30px; margin-left: 50px; margin-right: 25px;}
+.main .main_downthree div.data input:last-child{ margin-left: 25px; margin-right: 0;}
+.main .main_downthree div i.fl{ width: 20px; margin-left: 40px; font-style:normal; color: #626262; font-size: 15px; font-weight: 700;}
+.main .main_downthree div img.shili{ margin-left: 20px;}
+.main .main_downthree div ul{ width: 230px; padding-left: 20px; line-height: 25px; font-size: 14px; color: #626262; font-weight: 700; letter-spacing: 1px;}
+.main .main_downthree div:last-child{ height: 180px;margin-top: 60px;}
+.main .main_downthree div:last-child p{ width: 70%; color: #333; font-size:14px; line-height: 25px; margin-top: 0;}
+.main .main_downthree div:last-child p i{color: #f00; font-style:normal;} */
+.main .main_down .size textarea{font-size: 14px; padding:4px 0 0 4px;}
+
+
+.main .sure{width: 100%; height: 100px; margin-left: 0; line-height: 100px; background: #fff; text-align: center;}
+.main .sure a button{ width: 150px; height: 40px; border:1px solid #BFBFBF; border-radius:5px; background: #fff; margin-right: 20px; cursor: pointer;}
+.main .sure a:last-child button{ background: #F5495E; color: #fff; margin-left: 20px; margin-right: 0;}
+
+.main .main_down48{ height: 140px; background: #fff; text-align: center; margin:50px auto; min-width: 700px; width: 20%; border-radius:5px; padding-top: 60px;}
+.main .main_down48 h3{ font-size: 24px; margin-bottom:10px; font-weight: 400; line-height: 1.1; color: inherit;}
+.main .main_down48 p{font-size: 21px; font-weight: 400; margin-top: 20px;}
+
+textarea{resize: none;}
+
+/* 遮挡 */
+.zhedang{width: 100%; background: rgba(0,0,0,.5); position:fixed; top: 0; left: 0; overflow: hidden; display: none;}
+.shouji{width: 100%; position:fixed; top: 0; left: 0; display: none;}
+.shouji div{ width: 30%; height: 200px; margin:100px auto; background: #fff; z-index: 1000; box-shadow: 1px 1px 8px #ccc; border-radius:5px; display: none;}
+.shouji div h4{ height: 50px; line-height: 50px; color: #333; font-size: 18px; text-align: center; border-bottom:1px solid #E5E5E5; font-weight: 400; letter-spacing: 1px;}
+.shouji div p{ height: 70px; border-bottom:1px solid #E5E5E5; font-size: 16px; text-align: center; padding:20px 10px 0 10px; letter-spacing: 1px;}
+.shouji div span{display: block; height: 50px; line-height: 50px; text-align: center;}
+.shouji div span input{ padding:8px 25px; background: #F5495E; border-radius:5px; border:none; color: #fff; margin-right: 10px; cursor:pointer;}
+.shouji div span input:last-child{ background: #fff; border:1px solid #CCC; color: #000; margin-left: 10px; margin-right: 0;}
+.shouji div span input:hover{background: #E6E6E6; color: #000; border:none;}
+
+.shili1{ width: 900px; height: 900px; background: #fff; position: fixed; top: 45px; left: 25%; border-radius:10px; box-shadow: 0 5px 15px rgba(0,0,0,.5); display: none;}
+.shili1 span{float: right; font-size: 18px; color: #CBCBCB; margin: 20px 20px 0 0; cursor: pointer; }
+.shili1 span:hover{color: #00f;}
+.shili1 h1{ height: 66px; line-height: 66px; text-align: center; font-size: 24px; font-weight: 400; border-bottom:1px solid #E5E5E5;}
+.shili1 img{width: 540px; height: auto; padding-left: 20%;}
+.shili1 div{height: 66px; line-height: 66px; text-align: center; border-top:1px solid #E5E5E5;}
+.shili1 div button{ background: #F5495E; color: #fff; border:none; width: 80px; height: 35px; border-radius: 4px; cursor: pointer;}
+.shili1 div button:hover{background: #fff; color: #000; border:1px solid #ccc;}
+
+.main_down div:nth-child(6) label input{border:1px solid #E5E5E5;}
