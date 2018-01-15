@@ -1,0 +1,37 @@
+/*
+    项目负责人：赵强
+    项目创建日期:2017.9.11
+    最新更新:2017.9.11
+    修改人员:赵强
+    修改日期:
+    修改原因:
+    修改代码行数区间:
+*/
+.main{width: 100%; height: auto;}
+.main div.one{ width: 100%; height: auto;}
+.main div.one .fangan_top{width: 100%; height: 120px; height: 80px; text-align: center;/*  border-bottom:1px solid #EAEAEA; */}
+.main div.one .fangan_top h3{ font-size: 20px; height: 60px; line-height: 55px; color: #fff; font-weight:400; margin-bottom: 5px; margin-top: 35px; letter-spacing: 2px;background: url(../images/title.png) no-repeat; background-size: 280px;}
+.main div.one .fangan_top h3.one{ background-position: 46.5% 0px;}
+.main div.one .fangan_top h3.two{ background-position: 46.5% -68px;}
+.main div.one .fangan_top h3.three{ background-position: 46.5% -136px;}
+/* .main div.one .fangan_top p{ font-size: 16px; color: #5C5C5C; margin-top: 20px;} */
+.main div.one .fangan_top p.chak{ width: 100%; height:20px;}
+.main div.one .fangan_top p.chak{ width: 60px; height:4px; margin:18px auto; background: #858585;}
+
+.main div.one .fangan_down{width: 100%; height: auto; margin-top: 20px; overflow: hidden; zoom: 1;}
+.main div.one .fanganDown{margin-top: 50px; margin-bottom: 30px;}
+
+.main div.one .fangan_down h4{ line-height: 35px; color: #666; font-size: 14px; font-weight: 400; padding-left: 1.5%; overflow: hidden;}
+.main div.one .fangan_down h4 span{ display: inline-block; padding-left: 42px;}
+.main div.one .fangan_down h4.duo{line-height: 20px; margin-top: 5px;}
+
+.main div.one .fangan_down table{width: 100%; border:1px solid #E5E5E5; border-bottom: none;}
+.main div.one .fangan_down table tr{ height: 70px; line-height: 70px;}
+.main div.one .fangan_down table th{ font-size: 18px; color: #333; font-weight: 700; letter-spacing: 1px; background: #F5F5F5;}
+.main div.one .fangan_down table td{ padding-left:15px; border:1px solid #E5E5E5; border-top:none; border-left:none;}
+.main div.one .fangan_down table tr.first td{ font-size: 16px; color: #333; font-weight: 700;}
+.main div.one .fangan_down table td:first-child{width: 20%;}
+.main div.one .fangan_down table td:last-child{ width: 80%;}
+.main div.one .fangan_down table td.duo{ line-height: 30px; padding:15px 15px;}
+
+.main div.two{ margin-bottom: 40px;}
