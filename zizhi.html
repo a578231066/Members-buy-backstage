@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css" type="text/css" />
+    <link rel="stylesheet" href="css/gonggong.css" type="text/css" />
+    <link rel="stylesheet" href="css/shoppingMall.css" type="text/css" />
+</head>
+<body>
+    <!-- 头部 -->
+    <header>
+        <div class="login">
+            <div class="center">
+                <div class="titleCon">
+                    <ul>
+                        <li class="fl"><a href="#">帮助中心</a></li>
+                        <li class="fl" data-clipboard-action="copy"><a href="javascript:void(0);" class="btn" data-clipboard-text="http://www.huiyuanmai.com/">收藏本站</a></li>
+                        <li class="fl"><a href="#"><i></i>会员买手机商城</a></li>
+                        <li class="fr"><a href="#">商家报名</a></li>
+                        <li class="fr"><a href="#">我的订单</a></li>
+                        <li class="fr">
+                            <div class="fl"><a href="#"><img src="images/login_qq.png"/>QQ登录</a></div>
+                            <div class="fl"><a href="#">登录</a></div>
+                            <div class="fl"><a href="#">注册</a></div> 
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="logo_nav">
+            <div class="center">
+                <div class="logo fl"><a href="#"><img src="images/logo.png" alt="" /></a></div>
+                <div class="nav fl">
+                    <ul>
+                        <li><a href="#" class="active">招商首页</a></li>
+                        <li><a href="#">入驻标准</a></li>
+                        <li><a href="#">业务介绍</a></li>
+                        <li><a href="#">收费标准</a></li>
+                        <li><a href="#">常见问题</a></li>
+                    </ul>
+                    <ul class="fr">
+                        <a href="#"><input type="submit" value="登录" /></a>
+                        <a href="#"><input type="submit" value="注册" /></a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- 内容 -->
+    <div class="main mainZizhi">
+        <div class="center">
+            <div class="main_top">
+                <ul>
+                    <li>
+                        <i>1</i>
+                        <span>个人/企业信息填写</span>
+                    </li>
+                    <li>
+                        <i>2</i>
+                        <span>店铺信息填写</span>
+                    </li>
+                    <li class="current">
+                        <i>3</i>
+                        <span>资质审核</span>
+                    </li>
+                    <li>
+                        <i>4</i>
+                        <span>签约</span>
+                    </li>
+                    <li>
+                        <i>5</i>
+                        <span>入驻成功</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="main_down48">
+                <h3>您的申请已提交，请耐心等待！</h3>
+                <p>我们将在48小时内处理您的申请！</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 底部 -->
+    <footer>
+        <div class="center">
+            <div class="top">
+                <ul>
+                    <span><a href="#">首页</a></span><!--
+                    --><span><a href="#">网站地图</a></span><!--
+                    --><span><a href="#">会员买天天特价</a></span><!--
+                    --><span><a href="#">会员买</a></span><!--
+                    --><span><a href="#">淘宝活动报名入口</a></span><!--
+                    --><span class="gzwm">下载App</span>
+                </ul>
+            </div>
+            <p class="zhong">
+                <span></span><img src="images/weixin.png" alt="" />
+            </p>
+            <div class="down">
+                <p>&copy; 2011-2016 会员买 – 大连金硕科技有限公司 旗下购物商城 - 辽ICP备15004340号
+                    <a href="#"><img src="images/img/pic1.gif" alt="" /></a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="zhedang"></div>
+    <div class="shouji">
+        <div>
+            <h4>提示</h4>
+            <p><span>入驻人姓名将会绑定店铺提现账户名，并且不能更改，后期提现将只能提到该入驻人的银行卡内。确认您的入驻人姓名是正确的吗？</span></p>
+            <span><input type="submit" value="确认" /><input type="submit" value="关闭" /><input type="submit" value="取消" /></span>
+        </div>
+    </div>
+
+
+    <script src="js/jquery-1.7.1.min.js"></script>
+    <script src="js/shoppingMall.js"></script>
+    <script src="js/shoppingDetail.js"></script>
+    <script>
+    /* 图片大小判定 */
+        function validate(a){
+            var file = a.value;
+            if(!/.(gif|jpg|jpeg|png|GIF|JPG|png)$/.test(file)){
+              alert("图片类型必须是.gif,jpeg,jpg,png中的一种");
+              return;
+            }else{
+                 var image = new Image();
+                 image.src = file;
+                 var height = image.height;
+                 var width = image.width;
+                 var filesize = image.filesize;
+                  /*alert(height+"x.."+width);*/
+                 if(width!=300 && height!=300 && filesize>32768){
+                  alert('请上传300*300像素 或者大小32k的图片');
+                  return;
+                 }
+            }
+            alert("图片通过");
+        }
+    /* 本地上传 */
+        function getFileUrl(sourceId) {
+            var url;
+            if (navigator.userAgent.indexOf("MSIE")>=1) { // IE
+                url = document.getElementById(sourceId).value;
+            } else if(navigator.userAgent.indexOf("Firefox")>0) { // Firefox
+                url = window.URL.createObjectURL(document.getElementById(sourceId).files.item(0));
+            } else if(navigator.userAgent.indexOf("Chrome")>0) { // Chrome
+                url = window.URL.createObjectURL(document.getElementById(sourceId).files.item(0));
+            }
+            return url;
+        }
+        function preImg(sourceId, targetId) { 
+            var url = getFileUrl(sourceId); 
+            var imgPre = document.getElementById(targetId); 
+            imgPre.src = url; 
+        }
+
+    </script>
+</body>
+</html>
