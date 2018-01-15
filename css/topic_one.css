@@ -1,0 +1,25 @@
+/*
+    项目负责人：赵强
+    项目创建日期:2017.9.11
+    最新更新:2017.9.11
+    修改人员:赵强
+    修改日期:
+    修改原因:
+    修改代码行数区间:
+*/
+.main{width: 100%; height: auto;}
+.main .center{ padding: 0 50px; border:1px solid #eee; border-top:none; border-bottom:none;}
+.main .fangan_top{width: 100%; height: 120px; height: 80px; text-align: center;/*  border-bottom:1px solid #EAEAEA; */}
+.main .fangan_top h3{ font-size: 20px; height: 60px; line-height: 55px; color: #fff; font-weight:400; margin-bottom: 5px; margin-top: 35px; letter-spacing: 2px; background: url(../images/title.png) no-repeat; background-size: 280px; background-position: 46.5% -2px;}
+.main .fangan_top p.chak{ width: 100%; height:20px;}
+.main .fangan_top p.chak{ width: 60px; height:4px; margin:18px auto; background: #858585;}
+.main .fangan_down ol{ margin-bottom: 20px;}
+.main .fangan_down li{ line-height: 24px; padding: 30px 0; font-size: 14px; color: #444; border-bottom:1px solid #EEE;}
+.main .fangan_down li b{ display: inline-block; color: #2c8fe3; font-weight: 400; padding-bottom: 5px;}
+.main .fangan_down li b span{display: inline-block; width: 30px; font-size: 18px; color: #FAA510;}
+.main .fangan_down li p span{ display: inline-block; width: 30px; height: 100%; font-size: 18px; color: #2C8FE3; vertical-align: top;}
+.main .fangan_down li p i{font-style: normal; width: 97%; display: inline-block;}
+.main .fangan_down li:last-child{border-bottom:none;}
+
+.main .fangan_down li a{ color: blue;}
+.main .fangan_down li a:hover{ text-decoration: underline;}

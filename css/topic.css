@@ -1,0 +1,20 @@
+/*
+    项目负责人：赵强
+    项目创建日期:2017.9.11
+    最新更新:2017.9.11
+    修改人员:赵强
+    修改日期:
+    修改原因:
+    修改代码行数区间:
+*/
+.main{width: 100%; height: auto;}
+.main .fangan_top{width: 100%; height: 120px; height: 80px; text-align: center; border-bottom:1px solid #EAEAEA;}
+.main .fangan_top h3{ font-size: 20px; height: 60px; line-height: 55px; color: #fff; font-weight:400; margin-bottom: 5px; margin-top: 35px; letter-spacing: 2px; background: url(../images/title.png) no-repeat; background-size: 280px; background-position: 46.5% -2px;}
+.main .fangan_top p.chak{ width: 100%; height:20px;}
+.main .fangan_top p.chak{ width: 60px; height:4px; margin:18px auto; background: #858585;}
+.main .fangan_down ol{ margin-bottom: 20px;}
+.main .fangan_down li{ line-height: 24px; padding: 30px 0; font-size: 14px; list-style-type: decimal; color: #000; border-bottom:1px solid #EEE;}
+.main .fangan_down li:last-child{border-bottom:none;}
+
+.main .fangan_down li a{ color: blue;}
+.main .fangan_down li a:hover{ text-decoration: underline;}
