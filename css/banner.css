@@ -1,0 +1,9 @@
+.banner{width: 100%; height: 530px; margin-top: 1px; background: url(../images/daogou/banner.jpg) no-repeat; background-size:100% 100%; position:relative;}
+.banner .zhedang{ width: 100%; height: 100px; background: rgba(0,0,0,.3); position:absolute; left: 0; bottom: 0;text-align: center;}
+.banner .zhedang li{ float: left; width: 19.5%; height: 85px; font-size: 18px; padding-top: 30px; border-left:1px solid rgba(255, 255, 255, 0.2);}
+.banner .zhedang li a{ color:#fff;}
+.banner .zhedang li img{ width: 34px; height: 34px; margin-right: 20px; vertical-align: middle;}
+.banner .zhedang li img.kuan{width: 40px;}
+.banner .zhedang li>a>span{display: inline-block; height: 50px;text-align: left; padding-top: 15px; font-weight:700;}
+.banner .zhedang li span>span{ font-size: 14px; opacity: .8; font-weight:400;}
+.banner .zhedang li:hover{ background: rgba(255,255,255,.2);}
