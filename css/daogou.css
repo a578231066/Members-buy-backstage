@@ -1,0 +1,39 @@
+/**************************************** 内容 ****************************************/
+.main{width: 100%; height: auto;}
+.main .gund{width: 100%; background: #F5F6F6;}
+.main img.fl{ vertical-align: middle; margin-top: 25px;}
+.main .winBox { width:97%; height:70px; line-height: 70px; margin:0 auto; overflow:hidden; position:relative;}
+.main .scroll {/*width的大小是根据下面li的长度和多少个li而定的，需注意！*/ width:3000px; position:absolute; left:0px; top:0px;}
+.main .scroll li {  width:300px; font-size: 18px;  float:left; text-align:center;}
+.main .jiage{ width: 100%; height:180px; background: #F1F1F1;}
+.main .jiage h1{width: 100%; height: 100px; font-size:30px; text-align: center; font-weight: 400; color: #222; line-height: 100px;}
+.main .jiage .jiage_down table{ width: 100%; padding-top: 20px; font-size: 14px; text-align: center;}
+.main .jiage .jiage_down table th{ height: 60px; background: #1F75F6; color: #fff;}
+.main .jiage .jiage_down table td{ height: 50px; background: #FFF; color: #000;}
+.main .jiage .jiage_down table td.one{ background: #E8E8E8;}
+
+/**************************************** 导购平台 ****************************************/
+.main .shop{width: 99.8%; height: 528px; background: #F7F7F7; border:1px solid #F7F7F7;}
+.main .shop .shop_down .swipe{width: 100%; height: 468px; margin-top: 40px;}
+/* 最开始 */
+.main .shop .shop_down .swipe .moren{width: 23.167%; height: 438px; border:1px solid #E5E5E5; border-right:none;}
+.main .shop .shop_down .swipe .moren:last-child{border-right:1px solid #E5E5E5;}
+.main .shop .shop_down .swipe .moren .moren_top{width: 100%; height: 106px; text-align: center; background: #F3F3F3; padding-top: 50px; color: #000; font-size: 16px;}
+.main .shop .shop_down .swipe .moren .moren_top img.dn{display: none;}
+.main .shop .shop_down .swipe .moren .moren_down{width: 100%; height: 202px; text-align: center; padding-top: 80px; color: #8D8D8D; background: #fff;}
+.main .shop .shop_down .swipe .moren .moren_down .dabudui{display: none;}
+
+/* 鼠标经过后 */
+.main .shop .shop_down .swipe .on{width: 30%; height: 478px; margin-top: -20px; transition:500ms; border:1px solid #0A6DEE;}
+.main .shop .shop_down .swipe .on:last-child{ border-right:1px solid #0A6DEE;}
+.main .shop .shop_down .swipe .on .moren_top{ background: #0A6DEE; color: #fff;}
+.main .shop .shop_down .swipe .on .moren_top img{ margin-left: 70px; margin-bottom: 5px;}
+.main .shop .shop_down .swipe .on .moren_top img.db{display: none;}
+.main .shop .shop_down .swipe .on .moren_top img.dn{display: block;}
+.main .shop .shop_down .swipe .on .moren_down .xiaofendui{display: none;}
+.main .shop .shop_down .swipe .on .moren_down .dabudui{display: block;}
+.main .shop .shop_down .swipe .on .moren_down{text-align: left; height: 282px; padding-top: 40px;}
+.main .shop .shop_down .swipe .on .moren_down h1{color:#0A6DEE; margin-bottom: 20px; padding-left: 50px;}
+.main .shop .shop_down .swipe .on .moren_down p{color: #000; font-size: 12px; padding-left: 50px;}
+.main .shop .shop_down .swipe .on .moren_down input{ background: none; border:1px solid #BFBFBF; border-radius:5px; padding:8px 20px; margin-top: 10px; cursor: pointer; margin-left: 50px;}
+.main .shop .shop_down .swipe .on .moren_down input:hover{background: #0A6DEE; color: #fff; border:none;}
