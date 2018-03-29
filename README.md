@@ -5,4 +5,4 @@
 
 #### 运行截图
 
-<img src="images/github/GIF.gif" />
+<img src="images/GIF.gif" />
