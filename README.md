@@ -5,4 +5,6 @@
 
 #### 运行截图
 
+#### 链接地址<a href="http://seller.huiyuanmai.com/">http://seller.huiyuanmai.com/</a>
+
 <img src="images/github/GIF.gif" />
